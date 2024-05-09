@@ -2,15 +2,19 @@
 //INPUTS
 let payRate = 17.3
 let hoursWorked = 45
+
 //OUTPUT
 let reason = "";
 let grossPay = payRate * hoursWorked; //DEFAULT
+
 //CONSTANTS
 const LIMIT = 40;
 const overtimeMultiplier = 1.5; 
+
 //EVALUATE EXPRESSIONS
 const isOver = hoursWorked > LIMIT
 const isUnder = hoursWorked < LIMIT
+
 // MAKE A DECISION
 if(hoursWorked > LIMIT){
     reason = "IS OVER LIMIT"
